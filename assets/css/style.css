@@ -9,6 +9,19 @@
     height: 600px;
 }
 
+.banner::before {
+    content: '';
+    background-image: url('../img/banner_top.png');
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    opacity: 0;
+}
+
+
 .trade_transparency {
     background-color: #000;
     padding-top: 50px;
@@ -62,7 +75,7 @@
 }
 
 .fee_facilities {
-    color: #000;
+    color: #000;    
     text-align: center;
     font-family: Inter;
     font-size: 14px;
@@ -84,4 +97,8 @@
 .exclaimation{
     font-size: 145px;
     line-height: 45%;
+}
+
+.last_banner{
+    margin-top: 90px;
 }
