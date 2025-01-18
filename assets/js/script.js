@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     let timeline = gsap.timeline({
-        duration: 20,
-    });
+        duration: 50,
+    })
 
     timeline.to(".trade_transparency", {
         scaleY: 0.22,
@@ -66,11 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
         x: -1200,
     }, {
         x: 0,
-    }, 4);
+    }, 4)
 
     timeline.fromTo(".last_banner", {
         y: 500,
     }, {
         y: 0
-    }, 4)
+    }, 5)
+
+    timeline.fromTo(".banner::before", {
+        opacity: 0
+    }, {
+        opacity: 1
+    }, 6)
 })
